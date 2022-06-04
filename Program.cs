@@ -35,15 +35,49 @@ Merge nums1 and nums2 into a single array sorted in non-decreasing order.
 
 The final sorted array should not be returned by the function, but instead be stored inside the array nums1. To accommodate this, nums1 has a length of m + n, where the first m elements denote the elements that should be merged, and the last n elements are set to 0 and should be ignored. nums2 has a length of n.
             */
-             int[] nums1 = { 1,2,3,0,0,0 };
+            /*
+            int[] nums1 = { 1,2,3,0,0,0 };
         int item = 0;
        int[] nums2 = {2,5,6};
  
         nums1 = nums1.Where(e => e != item).ToArray();
-        //Console.WriteLine(String.Join(",", nums1));
+      
         int [] combine=nums1.Concat(nums2).ToArray();
         Console.WriteLine(String.Join(",",combine));
+            */ 
+
+            //Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
             
+            /*
+              int[] nums = { 1,2,3,1 };
+
+            for(int i=0; i< nums.length; i++){
+                for(int j=i+1; j<nums.length; i++){
+                        if(nums[i]==nums[j])
+                        {
+                            Console.WriteLine("true");
+                        }
+                        else{
+                            Console.WriteLine("False");
+                        }
+
+                }
+            */
+            /*
+            Given two non-negative integers, num1 and num2 represented as string, return the sum of num1 and num2 as a string.
+
+You must solve the problem without using any built-in library for handling large integers (such as BigInteger). You must also not convert the inputs to integers directly.
+            */
+            string num1="110000000";
+            string num2="155555553";
+            int result1=Int32.Parse(num1);
+            int result2=Int32.Parse(num2);
+            int sum=result1+result2;
+            string convert=sum.ToString();
+            Console.WriteLine(convert);
+            
+            }
+
         }
     }
-}
+
