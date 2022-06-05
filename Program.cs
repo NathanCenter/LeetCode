@@ -68,7 +68,7 @@ The final sorted array should not be returned by the function, but instead be st
 
 You must solve the problem without using any built-in library for handling large integers (such as BigInteger). You must also not convert the inputs to integers directly.
             */
-            string num1="110000000";
+            /*string num1="110000000";
             string num2="155555553";
             int result1=Int32.Parse(num1);
             int result2=Int32.Parse(num2);
@@ -76,8 +76,27 @@ You must solve the problem without using any built-in library for handling large
             string convert=sum.ToString();
             Console.WriteLine(convert);
             
-            }
+            }*/
 
-        }
+            /*
+            You are given a phone number as a string number. number consists of digits, spaces ' ', and/or dashes '-'.
+
+You would like to reformat the phone number in a certain manner. Firstly, remove all spaces and dashes. Then, group the digits from left to right into blocks of length 3 until there are 4 or fewer digits. The final digits are then grouped as follows:
+
+    2 digits: A single block of length 2.
+    3 digits: A single block of length 3.
+    4 digits: Two blocks of length 2 each.
+
+The blocks are then joined by dashes. Notice that the reformatting process should never produce any blocks of length 1 and produce at most two blocks of length 2.*/
+
+
+string number="1-23-45 6";
+string trim=number.Replace(" ","").Replace("-","");
+string formant=trim.Insert(3,"-");
+Console.WriteLine(formant);
+
+        
     }
+    }
+}
 
