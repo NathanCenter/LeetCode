@@ -80,14 +80,30 @@ You must solve the problem without using any built-in library for handling large
 
             /*
             Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.*/
-            int [] numbers={1,2,3};
+            /*int [] numbers={1,2,3};
             if (numbers.Length !=numbers.Distinct().Count()){
                Console.WriteLine("True");
             }
             else{
                 Console.WriteLine("False");
-            }
-         
+            } */
+
+            /*
+            You're given strings jewels representing the types of stones that are jewels, and stones representing the stones you have. Each character in stones is a type of stone you have. You want to know how many of the stones you have are also jewels.
+
+Letters are case sensitive, so "a" is considered a different type of stone from "A".
+            Input: jewels = "aA", stones = "aAAbbbb"
+Output: 3
+            */
+         string jewels="aA";
+         string stones="aAAbbb";
+         char has='A';
+
+         int count1=jewels.Count(p=>p==has);
+         int count2=stones.Count(p=>p==has);
+         int total=count1+count2;
+         string  Convert=total.ToString();
+        Console.WriteLine(Convert);
 
 
     }
