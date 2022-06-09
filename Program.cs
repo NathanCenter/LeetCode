@@ -95,7 +95,8 @@ Letters are case sensitive, so "a" is considered a different type of stone from 
             Input: jewels = "aA", stones = "aAAbbbb"
 Output: 3
             */
-         string jewels="aA";
+            /*
+               string jewels="aA";
          string stones="aAAbbb";
          char has='A';
 
@@ -104,6 +105,20 @@ Output: 3
          int total=count1+count2;
          string  Convert=total.ToString();
         Console.WriteLine(Convert);
+
+            */
+
+            /*
+            . Write a C# Sharp program to get only the odd values from a given array of integers
+            */
+        int [] array={1, 2, 3, 5, 4, 2, 3, 4};
+        for (int i =0; i<array.Length;i++){
+                if(array[i]%2==1){
+                    Console.WriteLine(array[i]);
+
+                }
+            
+        }
 
 
     }
