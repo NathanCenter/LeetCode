@@ -109,16 +109,16 @@ Output: 3
             */
 
             /*
-            . Write a C# Sharp program to get only the odd values from a given array of integers
+          Write a program in C# Sharp to search the position of a substring within a string
             */
-        int [] array={1, 2, 3, 5, 4, 2, 3, 4};
-        for (int i =0; i<array.Length;i++){
-                if(array[i]%2==1){
-                    Console.WriteLine(array[i]);
-
-                }
+           string value = "this is a string, thest";
             
-        }
+            Console.WriteLine(value.IndexOf("this is"));
+           
+              
+
+
+            
 
 
     }
