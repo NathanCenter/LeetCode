@@ -109,13 +109,17 @@ Output: 3
             */
 
             /*
-          Write a program in C# Sharp to search the position of a substring within a string
+         C# program to find sum of array elements
             */
-           string value = "this is a string, thest";
-            
-            Console.WriteLine(value.IndexOf("this is"));
+          
            
-              
+              int [] sumAll={10,20,50,-100,-52,30,-10};
+              int sum=0;
+              foreach(int item in sumAll){
+                   sum+=item; 
+
+              }
+              Console.WriteLine("Sum of all arrays "+sum);
 
 
             
