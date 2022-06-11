@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Collections.Generic;
 namespace leetcode
 {
     class Program
@@ -112,20 +113,49 @@ Output: 3
          C# program to find sum of array elements
             */
           
-           
-              int [] sumAll={10,20,50,-100,-52,30,-10};
+           /*
+           int [] sumAll={10,20,50,-100,-52,30,-10};
               int sum=0;
               foreach(int item in sumAll){
                    sum+=item; 
 
               }
               Console.WriteLine("Sum of all arrays "+sum);
+           */
 
-
+           /* C# program to count negative elements in array*/
+        /*
+                int [] allArrays={-1,23,-4,9,-1};
+         int  negative;
+Console.WriteLine("List of negative numbers: ");
+         foreach(int number in allArrays){
+             if (number<0){
+                 negative=number;
+                Console.WriteLine(negative);
+             }
             
+            
+         }
+        */
+ 
+ /*
+ Given the head of a linked list and an integer val, remove all the nodes of the linked list that has Node.val == val, and return the new head.
+ */
+   List <Int32> head=new List<Int32>();
+    head.Add(1);
+    head.Add(2);
+    head.Add(3);
+    head.Add(4);
+    head.Add(4);
+    int val=4;
+    head.RemoveAll(x=>x==val);
+
+        foreach (int a in head)
+        Console.WriteLine(a);
 
 
     }
+
 }
 }
 
