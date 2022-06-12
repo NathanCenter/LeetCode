@@ -141,7 +141,9 @@ Console.WriteLine("List of negative numbers: ");
  /*
  Given the head of a linked list and an integer val, remove all the nodes of the linked list that has Node.val == val, and return the new head.
  */
-   List <Int32> head=new List<Int32>();
+
+ /*
+  List <Int32> head=new List<Int32>();
     head.Add(1);
     head.Add(2);
     head.Add(3);
@@ -153,6 +155,20 @@ Console.WriteLine("List of negative numbers: ");
         foreach (int a in head)
         Console.WriteLine(a);
 
+ */
+
+ /*Given a non-negative integer x, compute and return the square root of x.
+
+Since the return type is an integer, the decimal digits are truncated, and only the integer part of the result is returned.
+
+*/
+  
+int x=8;
+double answer=Math.Sqrt(x);
+
+double roundUp=Math.Ceiling(answer);
+
+Console.WriteLine(roundUp);
 
     }
 
