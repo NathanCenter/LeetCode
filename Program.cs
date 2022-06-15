@@ -182,6 +182,7 @@ Console.WriteLine(roundUp);
 
 Given a string word, return true if the usage of capitals in it is right.*/
 
+/*
 string word="usA";
 
 char [] charArry=word.ToCharArray();
@@ -192,9 +193,64 @@ bool b=Char.IsUpper(convert);
    Console.WriteLine(b);
 }
    
-    
+*/
+/*
+Write C# Program to print day name of week. 
+*/
+/*
+Console.WriteLine("Enter a number that will print out a day in the week");
+   
+   int week=Convert.ToInt32(Console.ReadLine());
+    if (week==1){
+        Console.WriteLine("Monday");
+    }
+   else if (week==2){
+        Console.WriteLine("Tuesday");
+    }
+   else if (week==3){
+        Console.WriteLine("Wednesday");
+    }
+   else if (week==4){
+        Console.WriteLine("Thursday");
+    }
+   else if (week==5){
+        Console.WriteLine("Friday");
+    }
+   else if (week==6){
+        Console.WriteLine("Saturday");
+    }
+   else if (week==7){
+        Console.WriteLine("Sunday");
+    }
+    else
+        {
+            Console.WriteLine("Invalid Input! Please enter week in between 1-7.");
+        }
+
+}
+*/
+
+/*convert a int to a roman numerals */
+
+int num=3;
+switch(num) 
+{
+case 1:
+    Console.WriteLine("I");
+break;
+case 2:
+ Console.WriteLine("II");
+break;
+case 3:
+ Console.WriteLine("III");
+break;
+default:
+    Console.WriteLine("please enter a number that is not a negative number or zero");
+break;
+}
+
 
 }
 }
-}
 
+}
