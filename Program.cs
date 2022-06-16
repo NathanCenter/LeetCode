@@ -250,6 +250,7 @@ break;
 }
 
 */
+/*convert a string into a number and display it in the console*/
 
 string x="25";
 string y="23";
