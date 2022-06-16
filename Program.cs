@@ -231,7 +231,7 @@ Console.WriteLine("Enter a number that will print out a day in the week");
 */
 
 /*convert a int to a roman numerals */
-
+/*
 int num=3;
 switch(num) 
 {
@@ -248,6 +248,16 @@ default:
     Console.WriteLine("please enter a number that is not a negative number or zero");
 break;
 }
+
+*/
+
+string x="25";
+string y="23";
+int number1=Int32.Parse(x);
+int number2=Int32.Parse(y);
+int total=number1+number2;
+Console.WriteLine(total);
+
 
 
 }
