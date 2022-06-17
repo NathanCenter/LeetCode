@@ -251,6 +251,7 @@ break;
 
 */
 /*convert a string into a number and display it in the console*/
+/*
 
 string x="25";
 string y="23";
@@ -258,8 +259,29 @@ int number1=Int32.Parse(x);
 int number2=Int32.Parse(y);
 int total=number1+number2;
 Console.WriteLine(total);
+*/
 
+/*
+Given a string text, you want to use the characters of text to form as many instances of the word "balloon" as possible.
 
+You can use each character in text at most once. Return the maximum number of instances that can be formed.
+*/
+string text="balloon";
+ int b = 0, a = 0, n = 0, o = 0, l = 0;
+        foreach(var c in text){
+            if(c == 'b')
+                b++;
+            else if(c == 'a')
+                a++;
+            else if(c == 'n')
+                n++;
+            else if(c == 'o')
+                o++;
+            else if(c == 'l')
+                l++;
+        }
+
+        return Math.Min(b, Math.Min(a, Math.Min(n, Math.Min(o/2, l/2))));
 
 }
 }
