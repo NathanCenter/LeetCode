@@ -266,6 +266,7 @@ Given a string text, you want to use the characters of text to form as many inst
 
 You can use each character in text at most once. Return the maximum number of instances that can be formed.
 */
+/*
 string text="balloon";
  int b = 0, a = 0, n = 0, o = 0, l = 0;
         foreach(var c in text){
@@ -282,6 +283,16 @@ string text="balloon";
         }
 
         return Math.Min(b, Math.Min(a, Math.Min(n, Math.Min(o/2, l/2))));
+
+*/
+
+/*
+Given an array a , n print the reverse of it.
+*/
+const int n=4;
+int [] A= new int[n]{1,2,3,4};
+Array.Reverse(A);
+Console.WriteLine(String.Join(',',A));
 
 }
 }
