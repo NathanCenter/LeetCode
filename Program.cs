@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 namespace leetcode
 {
     class Program
@@ -288,11 +289,25 @@ string text="balloon";
 
 /*
 Given an array a , n print the reverse of it.
-*/
 const int n=4;
 int [] A= new int[n]{1,2,3,4};
 Array.Reverse(A);
 Console.WriteLine(String.Join(',',A));
+*/
+
+/*
+You are given a string s formed by digits and '#'. We want to map s to English lowercase characters as follows:
+
+    Characters ('a' to 'i') are represented by ('1' to '9') respectively.
+    Characters ('j' to 'z') are represented by ('10#' to '26#') respectively.
+
+*/
+
+
+string s="10#11#12";
+string replace=s.Replace("10#","j").Replace("11#","k").Replace("1","a").Replace("2","b");
+
+Console.WriteLine(replace);
 
 }
 }
