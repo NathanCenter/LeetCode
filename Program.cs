@@ -300,14 +300,27 @@ You are given a string s formed by digits and '#'. We want to map s to English l
 
     Characters ('a' to 'i') are represented by ('1' to '9') respectively.
     Characters ('j' to 'z') are represented by ('10#' to '26#') respectively.
-
-*/
-
-
+    
 string s="10#11#12";
 string replace=s.Replace("10#","j").Replace("11#","k").Replace("1","a").Replace("2","b");
 
 Console.WriteLine(replace);
+
+*/
+/*
+Search even numbers in an array
+*/
+int [] allNumbers={3,5,2,4,3,1,8,10,6,4};
+
+for (int i=0;i<allNumbers.Length;i++){
+        if ((allNumbers[i]%2)==0){
+            Console.WriteLine(allNumbers[i]);
+        }
+        
+
+
+}
+
 
 }
 }
