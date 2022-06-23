@@ -309,14 +309,25 @@ Console.WriteLine(replace);
 */
 /*
 Search even numbers in an array
-*/
 int [] allNumbers={3,5,2,4,3,1,8,10,6,4};
 
 for (int i=0;i<allNumbers.Length;i++){
         if ((allNumbers[i]%2)==0){
             Console.WriteLine(allNumbers[i]);
         }
-        
+*/
+/*
+A perfect number is a positive integer that is equal to the sum of its positive divisors, excluding the number itself. A divisor of an integer x is an integer that can divide x evenly.
+
+Given an integer n, return true if n is a perfect number, otherwise return false.
+*/
+        int num=7;
+        if ((num/1)==28||(num/2)==14 ){
+            Console.WriteLine("true");
+        }
+        else{
+            Console.WriteLine("false");
+        }
 
 
 }
@@ -325,4 +336,3 @@ for (int i=0;i<allNumbers.Length;i++){
 }
 }
 
-}
