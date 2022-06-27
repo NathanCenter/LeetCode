@@ -320,15 +320,28 @@ for (int i=0;i<allNumbers.Length;i++){
 A perfect number is a positive integer that is equal to the sum of its positive divisors, excluding the number itself. A divisor of an integer x is an integer that can divide x evenly.
 
 Given an integer n, return true if n is a perfect number, otherwise return false.
-*/
-        int num=7;
+int num=7;
         if ((num/1)==28||(num/2)==14 ){
             Console.WriteLine("true");
         }
         else{
             Console.WriteLine("false");
         }
+*/
+        
 
+/*Write C# program to reverse a number*/
+Console.WriteLine("please write your number");
+int forwardNumber=Int32.Parse(Console.ReadLine());
+
+int reverse=0;
+
+while(forwardNumber != 0){
+reverse = reverse * 10;
+reverse = reverse + forwardNumber % 10;
+forwardNumber = forwardNumber / 10;
+}
+Console.WriteLine(reverse);
 
 }
 
