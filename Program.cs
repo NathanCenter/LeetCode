@@ -330,7 +330,7 @@ int num=7;
 */
         
 
-/*Write C# program to reverse a number*/
+/*Write C# program to reverse a number
 Console.WriteLine("please write your number");
 int forwardNumber=Int32.Parse(Console.ReadLine());
 
@@ -342,6 +342,21 @@ reverse = reverse + forwardNumber % 10;
 forwardNumber = forwardNumber / 10;
 }
 Console.WriteLine(reverse);
+
+*/
+/*
+Given two binary strings a and b, return their sum as a binary string.
+*/
+string a="11";
+string b="1";
+
+int convert1=Convert.ToInt32(a,2);
+int convert2=Convert.ToInt32(b,2);
+int totalNumbers=convert1+convert2;
+
+string convertTotal=Convert.ToString(totalNumbers,2);
+Console.WriteLine(convertTotal);
+
 
 }
 
