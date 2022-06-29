@@ -346,7 +346,6 @@ Console.WriteLine(reverse);
 */
 /*
 Given two binary strings a and b, return their sum as a binary string.
-*/
 string a="11";
 string b="1";
 
@@ -356,6 +355,24 @@ int totalNumbers=convert1+convert2;
 
 string convertTotal=Convert.ToString(totalNumbers,2);
 Console.WriteLine(convertTotal);
+*/
+
+/*
+Unique Email Addresses
+string[] emails={"ali.ce.z@leetcode.com","my@email.com"};
+    if(emails.Length==1) return 1;
+        HashSet<string> es = new HashSet<string>();
+        
+        foreach(var email in emails)
+        {
+            var str = email.Split('@');
+            string ps = str[0].Split('+')[0];
+            es.Add(string.Concat(ps.Split('.')) + '@' + str[1]);
+        }
+        
+        return es.Count();
+*/
+
 
 
 }
