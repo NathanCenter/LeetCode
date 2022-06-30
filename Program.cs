@@ -373,6 +373,18 @@ string[] emails={"ali.ce.z@leetcode.com","my@email.com"};
         return es.Count();
 */
 
+/*Given an array nums of integers, return how many of them contain an even number of digits.*/
+int [] nums={12,345,2,6,7896};
+
+foreach(int i in nums){
+    int count=i.ToString().Length;
+   if (count%2==0){
+    Console.WriteLine("even");
+   }
+   else{
+    Console.WriteLine("odd"); 
+    
+   }
 
 
 }
@@ -380,4 +392,4 @@ string[] emails={"ali.ce.z@leetcode.com","my@email.com"};
 
 }
 }
-
+}
