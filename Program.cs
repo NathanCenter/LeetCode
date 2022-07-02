@@ -373,7 +373,8 @@ string[] emails={"ali.ce.z@leetcode.com","my@email.com"};
         return es.Count();
 */
 
-/*Given an array nums of integers, return how many of them contain an even number of digits.*/
+/*Given an array nums of integers, return how many of them contain an even number of digits.
+
 int [] nums={12,345,2,6,7896};
 
 foreach(int i in nums){
@@ -388,8 +389,14 @@ foreach(int i in nums){
 
 
 }
+*/
 
+/*This C# Program Calculates Power of Three. */
+Console.WriteLine("Please type in the number that you want to calulate the power of 3");
+double userNumber=Convert.ToDouble(Console.ReadLine());
+double powerOf3=Math.Pow(userNumber,3);
 
+Console.WriteLine(powerOf3);
 }
 }
 }
