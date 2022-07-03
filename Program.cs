@@ -391,12 +391,40 @@ foreach(int i in nums){
 }
 */
 
-/*This C# Program Calculates Power of Three. */
+/*This C# Program Calculates Power of Three.
 Console.WriteLine("Please type in the number that you want to calulate the power of 3");
 double userNumber=Convert.ToDouble(Console.ReadLine());
 double powerOf3=Math.Pow(userNumber,3);
 
 Console.WriteLine(powerOf3);
+ */
+
+ /*
+ 
+    User provides their name as Input and then application show message to "Welcome to their Name".
+    Jack, Steven and Mathew are banned for the organization. So, when any user enters Jack, Steven and Mathew as user name, the application raised an event and fire alarm as well as sends email to administration.
+
+ */
+
+ Console.WriteLine("Please enter your name");
+ string userName=Console.ReadLine();
+ if(userName=="Jack"|| userName=="jack"){
+    Console.WriteLine("Sorry Jack you are banned from the organization. Sending email to the administrater");
+ }
+ else if(userName=="Steven"|| userName=="steven"){
+
+ Console.WriteLine("Sorry Steven you are banned from the organization. Sending email to the administrater");
+ }
+ else if (userName=="Mathew"|| userName=="mathew"){
+
+Console.WriteLine("Sorry Mathew you are banned from the organization. Sending email to the administrater");
+ }
+ else{
+     Console.WriteLine("Welcome to "+ userName);
+ }
+
+
+
 }
 }
 }
