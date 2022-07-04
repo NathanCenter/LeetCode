@@ -403,9 +403,6 @@ Console.WriteLine(powerOf3);
  
     User provides their name as Input and then application show message to "Welcome to their Name".
     Jack, Steven and Mathew are banned for the organization. So, when any user enters Jack, Steven and Mathew as user name, the application raised an event and fire alarm as well as sends email to administration.
-
- */
-
  Console.WriteLine("Please enter your name");
  string userName=Console.ReadLine();
  if(userName=="Jack"|| userName=="jack"){
@@ -422,8 +419,38 @@ Console.WriteLine("Sorry Mathew you are banned from the organization. Sending em
  else{
      Console.WriteLine("Welcome to "+ userName);
  }
+ */
+
+ /*
+ You are given an integer array score of size n, where score[i] is the score of the ith athlete in a competition. All the scores are guaranteed to be unique.
+
+The athletes are placed based on their scores, where the 1st place athlete has the highest score, the 2nd place athlete has the 2nd highest score, and so on. The placement of each athlete determines their rank:
+ */
 
 
+int [] score={5,4,3,2,1};
+
+ Array.Sort(score);
+
+foreach(int order in score){
+        if (order==1){
+            Console.WriteLine("Gold Medal");
+
+        }
+        else if (order == 2){
+             Console.WriteLine("Silver Medal");
+        }
+        else if (order ==3){
+            Console.WriteLine("Bronze Medal");
+        }
+        else if (order== 4){
+            Console.WriteLine(4);
+        }
+        else if (order ==5){
+            Console.WriteLine(5);
+        }
+   
+}
 
 }
 }
