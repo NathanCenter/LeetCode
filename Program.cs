@@ -425,10 +425,8 @@ Console.WriteLine("Sorry Mathew you are banned from the organization. Sending em
  You are given an integer array score of size n, where score[i] is the score of the ith athlete in a competition. All the scores are guaranteed to be unique.
 
 The athletes are placed based on their scores, where the 1st place athlete has the highest score, the 2nd place athlete has the 2nd highest score, and so on. The placement of each athlete determines their rank:
- */
-
-
-int [] score={5,4,3,2,1};
+ 
+ int [] score={5,4,3,2,1};
 
  Array.Sort(score);
 
@@ -451,6 +449,23 @@ foreach(int order in score){
         }
    
 }
+ */
+
+/*
+Given a year as integer, write a method that checks if year is leap.
+*/
+
+Console.WriteLine("Type in year");
+int year=Int32.Parse( Console.ReadLine());
+if(year%4==0 && year % 100 != 0 || year % 400 == 0){
+    Console.WriteLine("this is a leap year");
+
+
+}
+else{
+    Console.WriteLine("this is not a leap year");
+}
+//Console.WriteLine(year);
 
 }
 }
