@@ -453,7 +453,6 @@ foreach(int order in score){
 
 /*
 Given a year as integer, write a method that checks if year is leap.
-*/
 
 Console.WriteLine("Type in year");
 int year=Int32.Parse( Console.ReadLine());
@@ -465,8 +464,17 @@ if(year%4==0 && year % 100 != 0 || year % 400 == 0){
 else{
     Console.WriteLine("this is not a leap year");
 }
-//Console.WriteLine(year);
+*/
 
+/*
+A self-dividing number is a number that is divisible by every digit it contains.
+*/
+int left=1;
+int right=22;
+for(int i=0; i<right;i++){
+    int array=i;
+   
+}
 }
 }
 }
