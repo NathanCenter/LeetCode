@@ -468,13 +468,34 @@ else{
 
 /*
 A self-dividing number is a number that is divisible by every digit it contains.
-*/
 int left=1;
 int right=22;
 for(int i=0; i<right;i++){
     int array=i;
    
 }
+*/
+
+/*Write an application that asks the user to enter the number '5' and loops over and over until '5' is entered.
+
+When 5 is finally entered, print "Got it!". */
+
+Console.WriteLine("please enter a number");
+
+int userInput=Int32.Parse(Console.ReadLine());
+int i=1;
+while(i<=userInput){
+Console.WriteLine(i);
+i++;
+
+}
+   
+   Console.WriteLine("Got it");
+    
+ 
+
+
+
 }
 }
 }
