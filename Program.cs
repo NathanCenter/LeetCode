@@ -477,9 +477,6 @@ for(int i=0; i<right;i++){
 */
 
 /*Write an application that asks the user to enter the number '5' and loops over and over until '5' is entered.
-
-When 5 is finally entered, print "Got it!". */
-
 Console.WriteLine("please enter a number");
 
 int userInput=Int32.Parse(Console.ReadLine());
@@ -491,9 +488,23 @@ i++;
 }
    
    Console.WriteLine("Got it");
+When 5 is finally entered, print "Got it!". */
+/*
+In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
+*/
+
     
  
+int posOrNegNumber=-1;
+int convertToNegative=posOrNegNumber*-1;
 
+if (posOrNegNumber<0){
+    Console.WriteLine("Already a negative number");
+}
+ else if (convertToNegative<0){
+
+ Console.WriteLine(" negative number");
+ }
 
 
 }
