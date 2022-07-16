@@ -491,9 +491,6 @@ i++;
 When 5 is finally entered, print "Got it!". */
 /*
 In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
-*/
-
-    
  
 int posOrNegNumber=-1;
 int convertToNegative=posOrNegNumber*-1;
@@ -505,6 +502,24 @@ if (posOrNegNumber<0){
 
  Console.WriteLine(" negative number");
  }
+
+*/
+
+/*
+You are given an integer N. You need to convert all zeroes of N to 5. 
+Input:
+N = 1004
+Output: 1554
+Explanation: There are two zeroes in 1004
+on replacing all zeroes with "5", the new
+number will be "1554".
+*/
+int N=14;
+string change=N.ToString();
+
+Console.WriteLine(change.Replace('0','5'));
+
+    
 
 
 }
