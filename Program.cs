@@ -513,15 +513,46 @@ Output: 1554
 Explanation: There are two zeroes in 1004
 on replacing all zeroes with "5", the new
 number will be "1554".
-*/
 int N=14;
 string change=N.ToString();
 
 Console.WriteLine(change.Replace('0','5'));
+*/
+
+
+/* Write C# Program to Find the Largest Number Among Three Number*/
+
+Console.WriteLine("Please write your 1st number");
+int number1=Int32.Parse(Console.ReadLine());
+
+Console.WriteLine("Please write your 2nd number");
+int number2=Int32.Parse(Console.ReadLine());
+Console.WriteLine("Please write your 3rd number");
+int number3=Int32.Parse(Console.ReadLine());
+
+
+Console.WriteLine("__________________");
+Console.WriteLine(number1);
+Console.WriteLine(number2);
+Console.WriteLine(number3);
+if(number1>number2){
 
     
+    if(number1>number3){
+        Console.WriteLine("number 1 is greater than all three numbers");
+    }
+    else{
+        Console.WriteLine("number 3 is greater than all three numbers");
+    }
+} 
+else if (number2>number3){
 
+    Console.WriteLine("number 2 is greater than all three numbers");
+    }
+    else {
+        Console.WriteLine("number 3 is greater than all three numbers");
+    }
+}
+}
+}
 
-}
-}
-}
