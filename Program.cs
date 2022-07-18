@@ -520,7 +520,8 @@ Console.WriteLine(change.Replace('0','5'));
 */
 
 
-/* Write C# Program to Find the Largest Number Among Three Number*/
+/* Write C# Program to Find the Largest Number Among Three Number
+
 
 Console.WriteLine("Please write your 1st number");
 int number1=Int32.Parse(Console.ReadLine());
@@ -552,6 +553,18 @@ else if (number2>number3){
     else {
         Console.WriteLine("number 3 is greater than all three numbers");
     }
+
+
+*/
+
+/*C# Program to convert celcius to farenheit.*/
+Console.WriteLine("Please enter your Celsius  number");
+double temp=Convert.ToDouble(Console.ReadLine());
+
+ double Up=(temp*1.8)+32;
+
+Console.WriteLine("to Fahrenheit : "+ Up);
+
 }
 }
 }
