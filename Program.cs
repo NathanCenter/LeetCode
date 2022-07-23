@@ -557,14 +557,29 @@ else if (number2>number3){
 
 */
 
-/*C# Program to convert celcius to farenheit.*/
+/*C# Program to convert celcius to farenheit.
 Console.WriteLine("Please enter your Celsius  number");
 double temp=Convert.ToDouble(Console.ReadLine());
 
  double Up=(temp*1.8)+32;
 
 Console.WriteLine("to Fahrenheit : "+ Up);
+*/
 
+/* Given an array of integers your solution should find the smallest integer.*/
+int [] arrayNumber= {12,2,3,4,5,6};
+
+int large=arrayNumber[0];
+int smallest=arrayNumber[0];
+
+for( int i=0; i<arrayNumber.Length;i++){
+
+    if(smallest>arrayNumber[i])
+        smallest=arrayNumber[i];
+    if(large<arrayNumber[i])
+        large=arrayNumber[i];
+}
+Console.WriteLine("smallest array "+ smallest);
 }
 }
 }
