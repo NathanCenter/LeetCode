@@ -566,7 +566,7 @@ double temp=Convert.ToDouble(Console.ReadLine());
 Console.WriteLine("to Fahrenheit : "+ Up);
 */
 
-/* Given an array of integers your solution should find the smallest integer.*/
+/* Given an array of integers your solution should find the smallest integer.
 int [] arrayNumber= {12,2,3,4,5,6};
 
 int large=arrayNumber[0];
@@ -580,6 +580,18 @@ for( int i=0; i<arrayNumber.Length;i++){
         large=arrayNumber[i];
 }
 Console.WriteLine("smallest array "+ smallest);
+*/
+/*Given an array of positive digits, write a method that returns number of times that two 7's are next to each other in an array.*/
+int [] numberOfSevens={8, 2, 5, 7, 9, 0, 7, 7, 3, 1};
+int counts=0;
+for (int i=0; i<numberOfSevens.Length-1;i++){
+    // compair numbers 
+   if (numberOfSevens[i] == 7 && numberOfSevens[i + 1] == 7){
+        counts++;
+   }
+
+}
+Console.WriteLine(counts);
 }
 }
 }
